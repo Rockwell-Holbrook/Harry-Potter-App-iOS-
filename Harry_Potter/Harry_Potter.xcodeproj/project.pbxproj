@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A256BA3215D44ED00EEBB55 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A256BA2215D44ED00EEBB55 /* CharacterViewController.swift */; };
+		9A256BA5215E741700EEBB55 /* staticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A256BA4215E741700EEBB55 /* staticVariables.swift */; };
+		9A256BAF215E94B500EEBB55 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A256BAE215E94B400EEBB55 /* background.jpg */; };
 		9A7F841D215A9AAC00EB4C23 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F841C215A9AAC00EB4C23 /* Character.swift */; };
 		9A8224DD215D375C00CF4C23 /* characterInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8224DC215D375C00CF4C23 /* characterInfo.xib */; };
 		9A9277D92149973A00094883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9277D82149973A00094883 /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		9A256BA2215D44ED00EEBB55 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		9A256BA4215E741700EEBB55 /* staticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticVariables.swift; sourceTree = "<group>"; };
+		9A256BAE215E94B400EEBB55 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../../../../Desktop/background.jpg; sourceTree = "<group>"; };
 		9A7F841C215A9AAC00EB4C23 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		9A8224DC215D375C00CF4C23 /* characterInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = characterInfo.xib; sourceTree = "<group>"; };
 		9A9277D52149973A00094883 /* Harry_Potter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harry_Potter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A256BA8215E7E3500EEBB55 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A256BAE215E94B400EEBB55 /* background.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		9A7F8419215A997A00EB4C23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7F841C215A9AAC00EB4C23 /* Character.swift */,
+				9A256BA4215E741700EEBB55 /* staticVariables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +123,7 @@
 		9A9277D72149973A00094883 /* Harry_Potter */ = {
 			isa = PBXGroup;
 			children = (
+				9A256BA8215E7E3500EEBB55 /* Assets */,
 				9A7F841A215A999100EB4C23 /* Model */,
 				9A7F841B215A99A900EB4C23 /* View */,
 				9A7F8419215A997A00EB4C23 /* Controller */,
@@ -211,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9277E32149973B00094883 /* LaunchScreen.storyboard in Resources */,
+				9A256BAF215E94B500EEBB55 /* background.jpg in Resources */,
 				9A9277E02149973B00094883 /* Assets.xcassets in Resources */,
 				9A9277DE2149973A00094883 /* Main.storyboard in Resources */,
 				9A8224DD215D375C00CF4C23 /* characterInfo.xib in Resources */,
@@ -232,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A256BA3215D44ED00EEBB55 /* CharacterViewController.swift in Sources */,
+				9A256BA5215E741700EEBB55 /* staticVariables.swift in Sources */,
 				9A7F841D215A9AAC00EB4C23 /* Character.swift in Sources */,
 				9A9277DB2149973A00094883 /* ViewController.swift in Sources */,
 				9A9277D92149973A00094883 /* AppDelegate.swift in Sources */,

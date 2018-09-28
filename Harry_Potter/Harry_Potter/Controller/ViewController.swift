@@ -12,9 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var characterSlider: UIPickerView!
     
-    
-   
-    var myCharacters = Characters()
+    @IBOutlet weak var mytitle: UILabel!
     
     var names: [String] = []
     
@@ -30,7 +28,7 @@ class ViewController: UIViewController {
         }
         
         group.notify(queue: .main) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(15), execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(35), execute: {
                 self.characterSlider.reloadAllComponents()
             })
         }
@@ -38,6 +36,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mytitle.font = UIFont (name: "Bradley Hand", size: 31)
         
         let jsonUrlString = "https://www.potterapi.com/v1/characters?key=$2a$10$qHP0eb3Zdr1ZaeDMOvJwH.LgkWvNh4x53UrQz0Wy/RTlALo5grtNO"
         
@@ -55,9 +55,10 @@ class ViewController: UIViewController {
                 do {
                     let characters = try
                         JSONDecoder().decode(Characters.self, from: data)
-                    self.myCharacters = characters
+                    staticVariables.myCharacters = characters
+                    print(staticVariables.myCharacters)
                     
-                    for character in self.myCharacters {
+                    for character in staticVariables.myCharacters {
                         self.names.append(character.name)
                     }
                     group.leave()
@@ -85,7 +86,7 @@ class ViewController: UIViewController {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.myCharacters.count
+        return staticVariables.myCharacters.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -93,7 +94,18 @@ class ViewController: UIViewController {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        staticVariables.sliderIndex = row
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        var label = UILabel()
+        if let v = view {
+            label = v as! UILabel
+        }
+        label.font = UIFont (name: "Times New Roman", size: 28)
+        label.text =  names[row]
+        label.textAlignment = .center
+        return label
     }
  }
  
