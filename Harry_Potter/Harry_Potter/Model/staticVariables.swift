@@ -10,5 +10,6 @@ import Foundation
 
 struct staticVariables {
     static var myCharacters = Characters()
+    static var myHouses = Houses()
     static var sliderIndex = 0
 }

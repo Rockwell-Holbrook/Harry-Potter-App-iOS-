@@ -18,6 +18,8 @@
 		9A9277E02149973B00094883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9277DF2149973B00094883 /* Assets.xcassets */; };
 		9A9277E32149973B00094883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9277E12149973B00094883 /* LaunchScreen.storyboard */; };
 		9A9277EE2149973B00094883 /* Harry_PotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9277ED2149973B00094883 /* Harry_PotterTests.swift */; };
+		9AB759D9216434C300BE02AD /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB759D8216434C300BE02AD /* Houses.swift */; };
+		9AB759DB21643A5800BE02AD /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB759DA21643A5800BE02AD /* HouseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,7 @@
 /* Begin PBXFileReference section */
 		9A256BA2215D44ED00EEBB55 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		9A256BA4215E741700EEBB55 /* staticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticVariables.swift; sourceTree = "<group>"; };
-		9A256BAE215E94B400EEBB55 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../../../../Desktop/background.jpg; sourceTree = "<group>"; };
+		9A256BAE215E94B400EEBB55 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Harry_Potter/Assets/background.jpg; sourceTree = SOURCE_ROOT; };
 		9A7F841C215A9AAC00EB4C23 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		9A8224DC215D375C00CF4C23 /* characterInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = characterInfo.xib; sourceTree = "<group>"; };
 		9A9277D52149973A00094883 /* Harry_Potter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harry_Potter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,8 @@
 		9A9277E92149973B00094883 /* Harry_PotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Harry_PotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9277ED2149973B00094883 /* Harry_PotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harry_PotterTests.swift; sourceTree = "<group>"; };
 		9A9277EF2149973B00094883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB759D8216434C300BE02AD /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
+		9AB759DA21643A5800BE02AD /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				9A256BA2215D44ED00EEBB55 /* CharacterViewController.swift */,
 				9A9277DA2149973A00094883 /* ViewController.swift */,
+				9AB759DA21643A5800BE02AD /* HouseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7F841C215A9AAC00EB4C23 /* Character.swift */,
+				9AB759D8216434C300BE02AD /* Houses.swift */,
 				9A256BA4215E741700EEBB55 /* staticVariables.swift */,
 			);
 			path = Model;
@@ -249,7 +255,9 @@
 				9A256BA3215D44ED00EEBB55 /* CharacterViewController.swift in Sources */,
 				9A256BA5215E741700EEBB55 /* staticVariables.swift in Sources */,
 				9A7F841D215A9AAC00EB4C23 /* Character.swift in Sources */,
+				9AB759DB21643A5800BE02AD /* HouseViewController.swift in Sources */,
 				9A9277DB2149973A00094883 /* ViewController.swift in Sources */,
+				9AB759D9216434C300BE02AD /* Houses.swift in Sources */,
 				9A9277D92149973A00094883 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
